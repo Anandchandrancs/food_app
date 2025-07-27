@@ -47,18 +47,20 @@ h1{
     color: #fff; */
 }
 
-.btn{
+.btn:link,
+.btn:visited{
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: 700;
     border-radius: 200px;
     /* background-color: #ff6b6b;
-    color: #fff;
-    transition: background-color 0.3s ease-in-out; */
+    color: #fff; */
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.btn-full{
+.btn-full:link,
+.btn-full:visited{
     background-color: #e67e22;
     color: #fff;
     border: 1px solid #e67e22;
@@ -67,7 +69,8 @@ h1{
     transition: background-color 0.3s ease-in-out;
 }
 
-.btn-ghost{
+.btn-ghost:link,
+.btn-ghost:visited{
     border: 1px solid #e67e22;
     /* background-color: #fff; */
     color: #e67e22;
@@ -75,3 +78,108 @@ h1{
     transition: background-color 0.3s ease-in-out;
 }
 
+.btn:hover,
+.btn:active{
+    background-color: #8b5322;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #d88c49;
+    color: #fff;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    float: left;
+    /* border-radius: 50%;
+    overflow: hidden; */
+    /* margin-top: 10px; */
+    margin-bottom: 20px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 50px;
+    list-style: none;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 90%;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0;
+    transition: border-bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    /* color: #e67e22; */
+    border-bottom: 3px solid #e67e22;
+}
+
+section{
+    padding: 80px 0;
+}
+
+h2{
+    font-size: 180%;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #333;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #e67e22;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.long-copy{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.box{
+    padding: 1%;
+}
+
+h3{
+    font-size: 110%;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.icon-big{
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
