@@ -32,6 +32,7 @@
 
         </div>
     </header>
+<main>
     <section class="section-features">
         <div class="row">
             <h2>Get food fast &mdash; Not fast food</h2>
@@ -318,13 +319,93 @@
                 </div>
             </div>
         </div>
-
     </section>
-
-    <main></main>
-    <footer></footer>
-    
-
+    <section class="section-form">
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row">
+            <form action="#" method="POST" class="contact-form">
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="find-us">How did you find us?</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <select name="find-us" id="find-us">
+                            <option value="google">Google</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="friend">Friend</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="newsletter">Newsletter?</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label for="message">Drop a line</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <textarea id="message" name="message" rows="10" cols="30" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span_1_of_3">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col span_2_of_3">
+                        <input type="submit" value="Send-me" class="btn btn-full"></input>
+                    </div>
+            </form>
+        </div>
+    </section>
+</main>
+    <footer>
+        <div class="row">
+            <div class="col span_1_of_2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">IOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="col span_1_of_2">
+                <ul class="social-links">
+                    <li><a href="#"><ion-icon class="fb" name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="twitter" name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="insta" name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="#"><ion-icon class="linkedin" name="logo-linkedin"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Copyright &copy; 2025 by Food App. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
